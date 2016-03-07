@@ -1,0 +1,26 @@
+CREATE TABLE Automobile(
+    id INTEGER not NULL AUTO_INCREMENT, 
+    model VARCHAR(255) not null Unique,
+    base_price FLOAT not NULL,
+    PRIMARY KEY (id)
+);
+CREATE TABLE OptionSet(
+    id INTEGER not NULL AUTO_INCREMENT, 
+    name VARCHAR(255) not NULL,
+    auto_id INTEGER not NULL, 
+    PRIMARY KEY (id),
+    FOREIGN KEY (auto_id) 
+    REFERENCES Automobile(id)
+    ON DELETE CASCADE
+);
+
+CREATE TABLE Options(
+    id INTEGER not NULL AUTO_INCREMENT, 
+    name VARCHAR(255) not NULL,
+    price FLOAT,
+    optset_id INTEGER,
+    PRIMARY KEY (id),
+    FOREIGN KEY(optset_id)
+    REFERENCES OptionSet(id)
+    ON DELETE CASCADE
+);

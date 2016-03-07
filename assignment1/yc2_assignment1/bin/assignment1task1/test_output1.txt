@@ -1,0 +1,23 @@
+the initial face is:heads
+===========================
+the facing up side is:tails
+the facing up side is:tails
+the facing up side is:tails
+the facing up side is:tails
+the facing up side is:heads
+the facing up side is:heads
+the facing up side is:tails
+the facing up side is:tails
+the facing up side is:tails
+the facing up side is:tails
+the facing up side is:tails
+the facing up side is:tails
+the facing up side is:tails
+the facing up side is:tails
+the facing up side is:heads
+the facing up side is:heads
+the facing up side is:heads
+the facing up side is:heads
+the facing up side is:tails
+the facing up side is:heads
+the times of heads is:7;the times of tails is:13

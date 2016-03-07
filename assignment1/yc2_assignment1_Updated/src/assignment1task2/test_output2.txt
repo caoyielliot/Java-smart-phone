@@ -1,0 +1,19 @@
+pls input the parking time and the purchased time:
+121 60
+the fine is:35.0
+PoliceOfficer [name=wang, badge=1111]
+ParkedCar [make=US, model=small, color=green, license=212, time=121]
+=========================================================
+pls input the parking time and the purchased time:
+119 60
+the fine is:25.0
+PoliceOfficer [name=wang, badge=1111]
+ParkedCar [make=US, model=small, color=green, license=212, time=119]
+=========================================================
+pls input the parking time and the purchased time:
+61 60
+the fine is:25.0
+PoliceOfficer [name=wang, badge=1111]
+ParkedCar [make=US, model=small, color=green, license=212, time=61]
+=========================================================
+pls input the parking time and the purchased time:

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>project1_unit5_client</display-name>
+  <welcome-file-list>
+    <welcome-file>GetAllAuto.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>servletGetModel</display-name>
+    <servlet-name>servletGetModel</servlet-name>
+    <servlet-class>web.getModel</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletGetModel</servlet-name>
+    <url-pattern>/getModel</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>displayOpset</display-name>
+    <servlet-name>displayOpset</servlet-name>
+    <servlet-class>web.displayOpset</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>displayOpset</servlet-name>
+    <url-pattern>/displayOpset/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>selectedOptions</display-name>
+    <servlet-name>selectedOptions</servlet-name>
+    <servlet-class>web.displayOpset</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>selectedOptions</servlet-name>
+    <url-pattern>/selectedChoices</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletInterface</display-name>
+    <servlet-name>ServletInterface</servlet-name>
+    <servlet-class>web.ServletInterface</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletInterface</servlet-name>
+    <url-pattern>/ServletInterface</url-pattern>
+  </servlet-mapping>
+</web-app>

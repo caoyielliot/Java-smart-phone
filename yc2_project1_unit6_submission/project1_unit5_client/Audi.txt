@@ -1,0 +1,12 @@
+Audi
+1999
+Color
+Green,0;Blue,0;Infra-Red Clearcoat,0;Yellow,0;
+Transmission
+Automatic,0;Standard,-815
+BrakesTractionControl
+Standard,0;ABS,400
+SideImpactAirbags
+None,0;Selected,350
+PowerMoonroof
+None,0;Selected,595

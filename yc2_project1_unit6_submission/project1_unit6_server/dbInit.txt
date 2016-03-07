@@ -1,0 +1,4 @@
+url=jdbc:mysql://127.0.0.1:3306/dblp
+Driver=com.mysql.jdbc.Driver
+username=root
+password=Since1992!
