@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.org.yc2_mini2_assignment2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".UI.MortgageForm"
+            android:label="@string/title_activity_mortgage_form"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        <activity
+            android:name=".UI.DisplayMortgage"
+            android:label="@string/title_activity_display_mortgage"
+            android:parentActivityName=".UI.MortgageForm"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.org.yc2_mini2_assignment2.UI.MortgageForm" />
+        </activity>
+    </application>
+
+</manifest>

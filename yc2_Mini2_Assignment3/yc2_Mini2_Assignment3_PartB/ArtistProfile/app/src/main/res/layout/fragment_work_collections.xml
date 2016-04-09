@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.me.artistprofile.UI.WorkCollectionsFragment"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Songs"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/song1Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Song1"/>
+        <Button
+            android:id="@+id/playButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"/>
+
+        <Button
+            android:id="@+id/pauseButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pause" />
+
+        <Button
+            android:id="@+id/stopButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/song2TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Song2"/>
+        <Button
+            android:id="@+id/playButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play" />
+
+        <Button
+            android:id="@+id/pauseButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pause" />
+
+        <Button
+            android:id="@+id/stopButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Videos"
+        android:textStyle="bold"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/playVideoButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Play"/>
+
+        <Button
+            android:id="@+id/pauseVideoButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pause"/>
+
+        <Button
+            android:id="@+id/replayVideoButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Replay"/>
+    </LinearLayout>
+
+    <VideoView
+        android:id="@+id/videoView1"
+        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_gravity="center_horizontal" />
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/videoView1">
+
+        <Button
+            android:id="@+id/playVideoButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Play"/>
+
+        <Button
+            android:id="@+id/pauseVideoButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pause"/>
+
+        <Button
+            android:id="@+id/replayVideoButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Replay"/>
+    </LinearLayout>
+
+    <VideoView
+        android:id="@+id/videoView2"
+        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

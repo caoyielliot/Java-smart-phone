@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="me.org.yc2_mini2_assignment2.UI.MortgageForm"
+    tools:showIn="@layout/activity_mortgage_form">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Purchase price:" />
+            <EditText
+                android:id="@+id/purchasePrice"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="$" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Mortgage term:" />
+            <EditText
+                android:id="@+id/mortgageTerm"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="years" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Interest rate:" />
+            <EditText
+                android:id="@+id/interestRate"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="%" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="First payment data:"/>
+            <Spinner
+                android:id="@+id/monthSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/date"/>
+            <Spinner
+                android:id="@+id/yearSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/year"/>
+        </TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculate"
+                android:textColor="#00ff6f"
+                android:onClick="Calculate"/>
+        </LinearLayout>
+    </TableLayout>
+
+</LinearLayout>

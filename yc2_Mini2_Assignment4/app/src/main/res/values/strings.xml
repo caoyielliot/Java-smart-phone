@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GeoAndMsg</string>
+    <string name="lbl_you_are_at">YOU ARE AT</string>
+    <string name="btn_get_location">SEND</string>
+</resources>
